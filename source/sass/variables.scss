@@ -1,12 +1,13 @@
 //Screen size
 $mobile: 320px;
 $tablet: 767.66px;
-$desktop: 1169.33px;
+$desktop: 1023.33px;
 
 // Colors
 $white: #ffffff;
 $black: #000000;
-$orange: #F17D4B;
-$pink: #FE7865;
-$dark-grey: #2C2E3F;
-$medium-grey: rgba($color: #2C2E3F, $alpha: 0.7);
+$special-black: #1F1F1F;
+$dark: #161616;
+$green: #0AD9C6;
+$grey: rgba($color: $black, $alpha: 0.5);
+$medium-grey: rgba($color: $black, $alpha: 0.7);
