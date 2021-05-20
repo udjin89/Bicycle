@@ -1,0 +1,106 @@
+.header {
+  outline: 2px solid pink;
+  outline-offset: -2px;
+
+  min-height: 825px;
+
+  @include tablet {
+    outline: 2px solid lawngreen;
+    min-height: 683px;
+  }
+
+  @include mobile {
+    outline: 2px solid red;
+  }
+
+  background-color: $dark;
+  background-image: url("../img/background/bike.jpg");
+  background-repeat: no-repeat;
+  // background-position-x: -240px;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("../img/background/bike@2x.jpg");
+  }
+
+  // @include tablet {
+  //   background-image: url("../img/background/promo-background-tablet.jpg");
+  //   min-height: 344px;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position-x: 0;
+  //   background-position-y: 0;
+
+  //   @include retina {
+  //     background-image: url("../img/background/promo-background-tablet@2x.jpg");
+  //   }
+  // }
+
+  // @include mobile {
+  //   background-image: url("../img/background/promo-mobile-background.jpg");
+  //   background-size: 100% 236px;
+
+  //   @include retina {
+  //     background-image: url("../img/background/promo-mobile-background@2x.jpg");
+  //   }
+  // }
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.header__description {
+  margin-top: 260px;
+
+  @include tablet {
+    margin-top: 85px;
+  }
+}
+
+.header__description h1 {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  color: $white;
+  max-width: 393px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.header__description p {
+  margin: 0;
+  padding: 0;
+  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 393px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 435px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

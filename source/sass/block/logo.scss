@@ -1,0 +1,9 @@
+.logo {
+  position: absolute;
+  top: 260px;
+
+  @include tablet {
+    position: initial;
+
+  }
+}

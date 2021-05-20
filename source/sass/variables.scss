@@ -5,9 +5,11 @@ $desktop: 1023.33px;
 
 // Colors
 $white: #ffffff;
+$white-opacity: rgba($color: $white, $alpha: 0.7);
 $black: #000000;
 $special-black: #1F1F1F;
 $dark: #161616;
 $green: #0AD9C6;
 $grey: rgba($color: $black, $alpha: 0.5);
 $medium-grey: rgba($color: $black, $alpha: 0.7);
+$special-grey: rgba(#1C1C1C, $alpha: 0.5);

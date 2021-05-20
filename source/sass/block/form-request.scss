@@ -1,0 +1,57 @@
+.form-request {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white;
+  }
+
+}
+
+.form-request input {
+  width: 100%;
+  height: 48px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #C9CCD4;
+  border-radius: 6px;
+
+  &::placeholder {
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $special-grey;
+
+  }
+
+  @include tablet {
+    max-width: 321px;
+  }
+
+  @include tablet {
+    width: 288px;
+  }
+}
+
+.form-request__submit input {
+  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  background-color: $green;
+  border: none;
+  border-radius: 6px;
+  padding: 0;
+  text-align: center;
+
+  @include tablet {
+    width: 321px;
+  }
+
+  @include tablet {
+    width: 288px;
+  }
+}
