@@ -1,49 +1,42 @@
 .header {
-  outline: 2px solid pink;
-  outline-offset: -2px;
-
   min-height: 825px;
 
-  @include tablet {
-    outline: 2px solid lawngreen;
-    min-height: 683px;
-  }
+  @include tablet {}
 
-  @include mobile {
-    outline: 2px solid red;
-  }
+  @include mobile {}
 
   background-color: $dark;
-  background-image: url("../img/background/bike.jpg");
+  background-image: url('../img/background/bike.jpg');
   background-repeat: no-repeat;
-  // background-position-x: -240px;
   background-size: cover;
 
   @include retina {
-    background-image: url("../img/background/bike@2x.jpg");
+    background-image: url('../img/background/bike@2x.jpg');
   }
 
-  // @include tablet {
-  //   background-image: url("../img/background/promo-background-tablet.jpg");
-  //   min-height: 344px;
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
-  //   background-position-x: 0;
-  //   background-position-y: 0;
+  @include tablet {
+    min-height: 0px;
+    max-height: fit-content;
+    background-image: url('../img/background/bike-tablet.jpg');
+    // min-height: 344px;
+    background-size: 100%;
+    // background-repeat: no-repeat;
+    // background-position-x: 0;
+    // background-position-y: 0;
 
-  //   @include retina {
-  //     background-image: url("../img/background/promo-background-tablet@2x.jpg");
-  //   }
-  // }
+    @include retina {
+      background-image: url('../img/background/bike-tablet@2x.jpg');
+    }
+  }
 
-  // @include mobile {
-  //   background-image: url("../img/background/promo-mobile-background.jpg");
-  //   background-size: 100% 236px;
+  @include mobile {
+    background-image: url('../img/background/bike-mobile.jpg');
+    background-size: 100%;
 
-  //   @include retina {
-  //     background-image: url("../img/background/promo-mobile-background@2x.jpg");
-  //   }
-  // }
+    @include retina {
+      background-image: url('../img/background/bike-mobile@2x.jpg');
+    }
+  }
 }
 
 .header__main {
@@ -53,6 +46,8 @@
   @include tablet {
     display: block;
   }
+
+  @include mobile {}
 }
 
 .header__description {
@@ -61,31 +56,44 @@
   @include tablet {
     margin-top: 85px;
   }
+
+  @include tablet {
+    margin-top: 70px;
+  }
 }
 
 .header__description h1 {
   margin: 0;
   padding: 0;
-
+  margin-top: 45px;
   font-family: 'OpenSans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
-  letter-spacing: -0.005em;
+  // letter-spacing: -0.005em;
+  letter-spacing: 1px;
   color: $white;
   max-width: 393px;
+  text-align: left;
 
   @include tablet {
+    margin-top: 80px;
     font-size: 30px;
     line-height: 42px;
     text-align: center;
     max-width: 100%;
   }
+
+  @include mobile {
+    margin-top: 60px;
+    padding: 0 16px;
+  }
 }
 
 .header__description p {
   margin: 0;
+  margin-top: 24px;
   padding: 0;
   font-family: 'OpenSans', 'Arial', sans-serif;
   font-style: normal;
@@ -102,5 +110,10 @@
     max-width: 435px;
     text-align: center;
     margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  @include mobile {
+    padding: 0 16px;
   }
 }

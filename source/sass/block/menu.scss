@@ -6,6 +6,17 @@
 
   @include tablet {
     flex-direction: row;
+
   }
 
+}
+
+.menu--open {
+  @include tablet {
+    .logo {
+      display: none;
+    }
+
+    background-color: $white;
+  }
 }

@@ -1,9 +1,10 @@
 .logo {
   position: absolute;
-  top: 260px;
+  top: 320px;
 
   @include tablet {
     position: initial;
-
+    margin-top: 25px;
+    margin-left: 20px;
   }
 }
