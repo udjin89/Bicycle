@@ -18,11 +18,7 @@
     min-height: 0px;
     max-height: fit-content;
     background-image: url('../img/background/bike-tablet.jpg');
-    // min-height: 344px;
     background-size: 100%;
-    // background-repeat: no-repeat;
-    // background-position-x: 0;
-    // background-position-y: 0;
 
     @include retina {
       background-image: url('../img/background/bike-tablet@2x.jpg');

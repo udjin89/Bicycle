@@ -1,0 +1,54 @@
+.footer {
+  padding-top: 250px;
+
+  @include tablet {
+    padding-top: 155px;
+  }
+
+  @include mobile {
+    padding-top: 120px;
+  }
+}
+
+.footer h2 {
+  @include title;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 30px auto 40px auto;
+  padding: 0;
+  text-align: center;
+  font-family: 'OpenSans', 'Arial', sans-serif;
+  max-width: 470px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 31px;
+  color: $medium-grey;
+
+  @include tablet {
+    max-width: 100%;
+    margin: 20px auto 20px auto;
+  }
+
+  @include mobile {
+    padding: 0 16px;
+    margin: 20px auto 25px auto;
+  }
+}
+
+.footer iframe {
+  display: block;
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 0 35px;
+    width: 100%;
+  }
+
+  @include mobile {
+    padding: 0 0;
+  }
+}

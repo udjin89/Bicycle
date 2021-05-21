@@ -13,6 +13,22 @@
 </head>
 
 <body class="page__body">
+  <svg style="display: none">
+    <symbol id="mail">
+      <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M24.2273 0H1.77273C0.768182 0 0 0.764706 0 1.76471V18.2353C0 19.2353 0.768182 20 1.77273 20H24.2273C25.2318 20 26 19.2353 26 18.2353V1.76471C26 0.764706 25.2318 0 24.2273 0ZM24.2273 17L19.5591 12.3529C19.2045 12 18.6727 12 18.3182 12.3529C17.9636 12.7059 17.9636 13.2353 18.3182 13.5882L22.9864 18.2353H3.01362L7.68182 13.5882C8.03636 13.2353 8.03636 12.7059 7.68182 12.3529C7.32727 12 6.79547 12 6.44092 12.3529L1.77273 17V5.70585L12.4091 13.7059C12.5864 13.8236 12.7636 13.8823 12.9409 13.8823C13.1182 13.8823 13.2954 13.8236 13.4727 13.7059L24.2273 5.70585V17ZM24.2273 1.76471V3.4706L12.9409 11.8235L1.77273 3.4706V1.76471H24.2273Z"
+          fill="#0AD9C6" />
+      </svg>
+    </symbol>
+    <symbol id="phone">
+      <svg width="22" height="23" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M3.45641 6.62432C3.37185 5.42623 3.63759 4.24606 4.3412 3.29684C4.9512 2.43632 5.74541 1.96636 6.70269 1.69172C7.50898 1.4525 8.03745 1.74561 8.26998 2.64204C8.60217 3.98224 9.07628 5.3225 9.24841 6.73361C9.30277 7.35485 8.90114 8.23322 8.46629 8.6856C7.37614 9.75888 7.60263 10.5399 8.43006 12.1643C8.68675 12.6881 9.09442 13.5934 9.88864 14.7919C10.7161 15.9992 11.1539 16.6472 12.2169 16.0975C13.3977 15.5035 14.2583 15.8855 15.1492 16.8444C15.7531 17.5369 16.4175 18.1318 17.0215 18.8243C17.8942 19.8542 17.8549 20.5641 17.1725 21.2915C15.9434 22.6309 13.9141 23.0736 12.4042 22.1766C11.5707 21.6881 10.7402 21.0487 10.0789 20.303C7.16477 16.9825 5.06297 13.1212 3.79765 8.76321C3.59532 8.02654 3.50171 7.28104 3.45641 6.62432Z"
+          stroke="#0AD9C6" stroke-width="2" stroke-miterlimit="10" />
+      </svg>
+    </symbol>
+  </svg>
   <header class="header">
     <div class="menu menu--open container-slim">
       <a class="logo" href="#">
@@ -69,7 +85,10 @@
           <label class="hidden" for="user-name">name</label>
           <input id="user-name" name="userName" type="text" placeholder="Введите Ваше Имя" required>
           <label class="hidden" for="user-tel">phone number</label>
-          <input id="user-tel" name="userTel" type="tel" placeholder="Введите Ваш номер телефона" required>
+          <!-- onkeyup="this.value = this.value.replace(/[^\d]/g,'');" -->
+          <input id="user-tel" name="userTel" type="tel" placeholder="Введите Ваш номер телефона"
+            pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="Используйте формат: +7 (777) 777-77-77"
+            required>
 
           <div class="form-request__submit">
             <input type="submit" value="Подобрать велосипед мечты">
@@ -87,7 +106,34 @@
   </section>
   <section class="types"></section>
   <section class="about"></section>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <h2>Как нас найти?</h2>
+    <p>Мы&nbsp;находимся по&nbsp;адресу: <nobr>Санкт-Петербург</nobr>, ул. Большая Конюшенная, д.&nbsp;19</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6081195149852!2d30.32330650958949!3d59.93864459953058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602327903681!5m2!1sru!2sru"
+      width="957" height="530" title="Офис компании: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" style="border:0;"
+      allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="contact">
+      <a class="contact__mail" href="mailto:puteshestviemechta@gmail.ru">
+        <div class="contact__icon">
+          <svg class="user-transport-icon icon-plane icon-on" width="26" height="20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="#mail"></use>
+          </svg>
+        </div>
+        puteshestviemechta@gmail.ru
+      </a>
+      <a class="contact__phone" href="tel:849978468446">
+        <div class="contact__icon">
+          <svg class="user-transport-icon icon-plane icon-on" width="22" height="23" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="#phone"></use>
+          </svg>
+        </div>
+        +7 (499) -784-684-46
+      </a>
+    </div>
+  </footer>
   <script src="./js/main.js"></script>
   <script src="./js/vendor.js"></script>
 </body>
