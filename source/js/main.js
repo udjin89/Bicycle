@@ -25,3 +25,16 @@ function closeMenu() {
   menuNav.classList.remove('navigation--open');
   menu.classList.remove('menu--open');
 }
+// Smooth scroll
+const links = document.querySelectorAll('a[href^="#"]');
+for (let link of links) {
+  link.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    const id = link.getAttribute('href');
+
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+};

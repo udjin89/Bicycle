@@ -1,4 +1,70 @@
 .facts {
   outline: 2px solid green;
   outline-offset: -2px;
+  margin-top: 150px;
+  padding-bottom: 130px;
+
+  @include tablet {
+    padding-bottom: 70px;
+  }
+}
+
+.facts h2 {
+  @include title;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.facts__list {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.facts__item {
+  span {
+    display: block;
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -1.27273px;
+    color: $green;
+  }
+
+  p {
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    margin: 0;
+    margin-top: 30px;
+    max-width: 250px;
+  }
+
+  @include tablet {
+    width: 50%;
+    margin-top: 40px;
+
+    p {
+      margin: 15px auto 0 auto;
+    }
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-top: 35px;
+
+    p {
+      font-size: 18px;
+    }
+  }
 }

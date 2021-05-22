@@ -28,11 +28,12 @@ img {
   margin: 0 auto;
 
   @include tablet {
-    max-width: 726px;
+    // max-width: 726px;
+    padding: 0 89px;
   }
 
   @include mobile {
-    // padding: 0 16px;
+    padding: 0 15px;
 
   }
 }

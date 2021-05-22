@@ -54,7 +54,7 @@
       <nav class="navigation navigation--open navigation--no-js">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">О нас</a>
+            <a class="navigation__link" href="#facts">О нас</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Виды велосипедов</a>
@@ -63,7 +63,7 @@
             <a class="navigation__link" href="#">Видео про велосипеды </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Контакты</a>
+            <a class="navigation__link" href="#contact">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -87,7 +87,7 @@
           <label class="hidden" for="user-tel">phone number</label>
           <!-- onkeyup="this.value = this.value.replace(/[^\d]/g,'');" -->
           <input id="user-tel" name="userTel" type="tel" placeholder="Введите Ваш номер телефона"
-            pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="Используйте формат: +7 (777) 777-77-77"
+            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Используйте формат: +7 (777) 777-77-77"
             required>
 
           <div class="form-request__submit">
@@ -101,12 +101,48 @@
     </div>
   </header>
 
-  <section class="facts">
-    facts
+  <section class="facts" id="facts">
+    <div class="container">
+      <h2>Несколько фактов о нас</h2>
+      <ul class="facts__list">
+        <li class="facts__item">
+          <span>
+            01
+          </span>
+          <p>
+            Самый широкий выбор велосипедов!
+          </p>
+        </li>
+        <li class="facts__item">
+          <span>
+            02
+          </span>
+          <p>
+            Доставка велосипедов по всей России!
+          </p>
+        </li>
+        <li class="facts__item">
+          <span>
+            03
+          </span>
+          <p>
+            Большой выбор крутых аксессуаров!
+          </p>
+        </li>
+        <li class="facts__item">
+          <span>
+            04
+          </span>
+          <p>
+            Профессиональные консультации!
+          </p>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="types"></section>
   <section class="about"></section>
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <h2>Как нас найти?</h2>
     <p>Мы&nbsp;находимся по&nbsp;адресу: <nobr>Санкт-Петербург</nobr>, ул. Большая Конюшенная, д.&nbsp;19</p>
     <iframe
