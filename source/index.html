@@ -57,10 +57,10 @@
             <a class="navigation__link" href="#facts">О нас</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Виды велосипедов</a>
+            <a class="navigation__link" href="#types">Виды велосипедов</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Видео про велосипеды </a>
+            <a class="navigation__link" href="#about">Видео про велосипеды </a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#contact">Контакты</a>
@@ -100,48 +100,116 @@
     </div>
     </div>
   </header>
+  <main class="main">
+    <section class="facts" id="facts">
+      <div class="container">
+        <h2>Несколько фактов о нас</h2>
+        <ul class="facts__list">
+          <li class="facts__item">
+            <span>
+              01
+            </span>
+            <p>
+              Самый широкий выбор велосипедов!
+            </p>
+          </li>
+          <li class="facts__item">
+            <span>
+              02
+            </span>
+            <p>
+              Доставка велосипедов по всей России!
+            </p>
+          </li>
+          <li class="facts__item">
+            <span>
+              03
+            </span>
+            <p>
+              Большой выбор крутых аксессуаров!
+            </p>
+          </li>
+          <li class="facts__item">
+            <span>
+              04
+            </span>
+            <p>
+              Профессиональные консультации!
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="types" id="types">
+      <div class="container">
+        <h2>Виды велосипедов</h2>
+        <ul class="types__list">
+          <li class="types__item">
+            <a href="#" class="types__link types__link--circle-big">
 
-  <section class="facts" id="facts">
-    <div class="container">
-      <h2>Несколько фактов о нас</h2>
-      <ul class="facts__list">
-        <li class="facts__item">
-          <span>
-            01
-          </span>
-          <p>
-            Самый широкий выбор велосипедов!
-          </p>
-        </li>
-        <li class="facts__item">
-          <span>
-            02
-          </span>
-          <p>
-            Доставка велосипедов по всей России!
-          </p>
-        </li>
-        <li class="facts__item">
-          <span>
-            03
-          </span>
-          <p>
-            Большой выбор крутых аксессуаров!
-          </p>
-        </li>
-        <li class="facts__item">
-          <span>
-            04
-          </span>
-          <p>
-            Профессиональные консультации!
-          </p>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="types"></section>
-  <section class="about"></section>
+              <picture>
+                <!-- <source media="(max-width: 768px)"
+                  srcset="./img/content/bike-type1-mobile.webp 1x, ./img/content/bike-type1-mobile@2x.webp 2x"
+                  type="image/webp">
+                <source media="(max-width: 1023px)"
+                  srcset="./img/content/bike-type1-tablet.webp 1x, ./img/content/bike-type1-tablet@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 1024px)"
+                  srcset="./img/content/bike-type1-desktop.webp 1x, ./img/content/bike-type1-tablet-desktop@2x.webp 2x"
+                  type="image/webp"> -->
+                <img src="./img/content/bike-type1.jpg" srcset="./img/content/bike-type1@2x.jpg 2x"
+                  alt="Фотография дорожного велосипеда" width="342" height="503">
+              </picture>
+
+              <h3>Дорожный велосипед</h3>
+
+
+            </a>
+          </li>
+          <li class="types__item">
+            <a href="#" class="types__link types__link--squares">
+
+              <picture>
+                <!-- <source media="(max-width: 768px)"
+                srcset="./img/content/bike-type1-mobile.webp 1x, ./img/content/bike-type1-mobile@2x.webp 2x"
+                type="image/webp">
+              <source media="(max-width: 1023px)"
+                srcset="./img/content/bike-type1-tablet.webp 1x, ./img/content/bike-type1-tablet@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 1024px)"
+                srcset="./img/content/bike-type1-desktop.webp 1x, ./img/content/bike-type1-tablet-desktop@2x.webp 2x"
+                type="image/webp"> -->
+                <img src="./img/content/bike-type2.jpg" srcset="./img/content/bike-type2@2x.jpg 2x"
+                  alt="Фотография горного велосипеда" width="342" height="503">
+              </picture>
+
+              <h3>Горный велосипед</h3>
+            </a>
+          </li>
+          <li class="types__item ">
+            <a href="#" class="types__link types__link--circle-small">
+              <picture>
+                <!-- <source media="(max-width: 768px)"
+                srcset="./img/content/bike-type1-mobile.webp 1x, ./img/content/bike-type1-mobile@2x.webp 2x"
+                type="image/webp">
+              <source media="(max-width: 1023px)"
+                srcset="./img/content/bike-type1-tablet.webp 1x, ./img/content/bike-type1-tablet@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 1024px)"
+                srcset="./img/content/bike-type1-desktop.webp 1x, ./img/content/bike-type1-tablet-desktop@2x.webp 2x"
+                type="image/webp"> -->
+                <img src="./img/content/bike-type3.jpg" srcset="./img/content/bike-type3@2x.jpg 2x"
+                  alt="Фотография детского велосипеда" width="342" height="503">
+              </picture>
+              <h3>Детский велосипед</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about" id="about"></section>
+  </main>
+
   <footer class="footer" id="contact">
     <h2>Как нас найти?</h2>
     <p>Мы&nbsp;находимся по&nbsp;адресу: <nobr>Санкт-Петербург</nobr>, ул. Большая Конюшенная, д.&nbsp;19</p>
