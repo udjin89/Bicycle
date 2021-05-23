@@ -25,6 +25,15 @@
   line-height: 22px;
   color: $grey;
   text-decoration: none;
+
+  &:hover {
+    color: $dark-grey;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $green;
+  }
 }
 
 .contact__mail {

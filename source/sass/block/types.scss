@@ -1,7 +1,9 @@
 .types {
   // background-color: $light-grey;
   background-color: $light-grey;
-  padding-bottom: 50px;
+  padding-bottom: 144px;
+  padding-top: 149px;
+  overflow: hidden;
 }
 
 .types h2 {
@@ -13,6 +15,7 @@
 
 .types h3 {
   margin: 0;
+  margin-top: 20px;
   padding: 0;
   font-family: 'OpenSans', 'Arial', sans-serif;
   font-weight: 600;
@@ -50,11 +53,25 @@
   flex-grow: 1;
   width: 341px;
 
+  &:nth-child(2n) {
+    margin-top: 30px;
+  }
+
+  &:nth-child(3n) {
+    margin-top: -10px;
+  }
+
   @include tablet {
     margin-bottom: 50px;
-    // margin-right: 20px;
     width: 50%;
 
+    &:nth-child(2n) {
+      margin-top: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-top: 0;
+    }
   }
 
   @include mobile {
@@ -81,13 +98,18 @@
   &:visited {}
 
   &:hover {
+    opacity: 0.9;
+
     h3 {
-      color: red;
+      opacity: 0.7;
     }
   }
 
   &:active {
+    opacity: 1;
+
     h3 {
+      opacity: 1;
       color: $green;
     }
   }
@@ -174,7 +196,7 @@
 
 .types__link--circle-small {
   &::before {
-    z-index: 1;
+    z-index: -1;
     top: -32px;
     right: -36px;
     width: 95px;

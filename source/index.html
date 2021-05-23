@@ -28,6 +28,15 @@
           stroke="#0AD9C6" stroke-width="2" stroke-miterlimit="10" />
       </svg>
     </symbol>
+    <symbol id="play">
+      <svg viewBox="0 0 65 65" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z"
+          fill="currentColor" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z"
+          fill="#070707" />
+      </svg>
+    </symbol>
   </svg>
   <header class="header">
     <div class="menu menu--open container-slim">
@@ -180,7 +189,7 @@
                 srcset="./img/content/bike-type1-desktop.webp 1x, ./img/content/bike-type1-tablet-desktop@2x.webp 2x"
                 type="image/webp"> -->
                 <img src="./img/content/bike-type2.jpg" srcset="./img/content/bike-type2@2x.jpg 2x"
-                  alt="Фотография горного велосипеда" width="342" height="503">
+                  alt="Фотография горного велосипеда" width="342" height="566">
               </picture>
 
               <h3>Горный велосипед</h3>
@@ -199,7 +208,7 @@
                 srcset="./img/content/bike-type1-desktop.webp 1x, ./img/content/bike-type1-tablet-desktop@2x.webp 2x"
                 type="image/webp"> -->
                 <img src="./img/content/bike-type3.jpg" srcset="./img/content/bike-type3@2x.jpg 2x"
-                  alt="Фотография детского велосипеда" width="342" height="503">
+                  alt="Фотография детского велосипеда" width="342" height="512">
               </picture>
               <h3>Детский велосипед</h3>
             </a>
@@ -207,7 +216,16 @@
         </ul>
       </div>
     </section>
-    <section class="about" id="about"></section>
+    <section class="about" id="about">
+      <h2>Видео про велосипеды</h2>
+      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+      <div class="about__video">
+        <svg width="65" height="65" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="#play"></use>
+        </svg>
+        <img src="img/background/blind.png" alt="заставка с велосипедом" width="929" height="522">
+      </div>
+    </section>
   </main>
 
   <footer class="footer" id="contact">
@@ -220,8 +238,7 @@
     <div class="contact">
       <a class="contact__mail" href="mailto:puteshestviemechta@gmail.ru">
         <div class="contact__icon">
-          <svg class="user-transport-icon icon-plane icon-on" width="26" height="20" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+          <svg width="26" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="#mail"></use>
           </svg>
         </div>
@@ -229,8 +246,7 @@
       </a>
       <a class="contact__phone" href="tel:849978468446">
         <div class="contact__icon">
-          <svg class="user-transport-icon icon-plane icon-on" width="22" height="23" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+          <svg width="22" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="#phone"></use>
           </svg>
         </div>

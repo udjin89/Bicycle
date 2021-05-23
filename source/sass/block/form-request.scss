@@ -21,6 +21,7 @@
   margin-bottom: 20px;
   border: 1px solid #C9CCD4;
   border-radius: 6px;
+  cursor: pointer;
 
   &::placeholder {
     font-family: 'OpenSans', 'Arial', sans-serif;
@@ -39,6 +40,12 @@
 
   @include mobile {
     width: 288px;
+  }
+
+  &:hover {
+    &::placeholder {
+      color: $black;
+    }
   }
 }
 
@@ -60,5 +67,15 @@
 
   @include mobile {
     width: 288px;
+  }
+
+  &:hover {
+
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 1;
+    color: $white;
   }
 }
