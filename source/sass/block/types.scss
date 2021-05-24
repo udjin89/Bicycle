@@ -42,10 +42,11 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   @include tablet {
     margin-top: 30px;
-    justify-content: center;
+    // justify-content: center;
   }
 
   @include mobile {
@@ -55,7 +56,7 @@
 }
 
 .types__item {
-  flex-grow: 1;
+  // flex-grow: 1;
   width: 341px;
 
 
@@ -70,6 +71,9 @@
   @include tablet {
     margin-bottom: 50px;
     max-width: 50%;
+    width: 270px;
+    // margin: 0 auto;
+    // flex-grow: 1;
     // width: 50%;
     // display: flex;
 
@@ -79,13 +83,13 @@
     }
 
     &:nth-child(3n) {
-      margin-top: 0;
+      margin: 0 auto 50px auto;
     }
   }
 
   @include mobile {
     margin: 0 auto;
-    width: 100%;
+    max-width: 100%;
 
     &:not(:last-child) {
       margin-bottom: 40px;
@@ -188,7 +192,7 @@
 
   &::after {
     z-index: 1;
-    bottom: 16px;
+    bottom: 35px;
     right: -23px;
     width: 47px;
     height: 47px;
@@ -215,6 +219,7 @@
     border-radius: 50%;
 
     @include tablet {
+      z-index: 1;
       top: -20px;
       right: -25px;
       width: 68px;

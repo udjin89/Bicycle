@@ -1,15 +1,26 @@
 const toggle = document.querySelector('.toggle');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.navigation');
+const links = document.querySelectorAll('a[href^="#"]');
+const inputNumberPhone = document.querySelector('#user-tel');
 
 // No-js menu
-toggle.classList.remove('toggle--off');
-menu.classList.remove('menu--open');
-menuNav.classList.remove('navigation--open');
-menuNav.classList.remove('navigation--no-js');
-
+if (menu) {
+  menu.classList.remove('menu--open');
+}
+if (menuNav) {
+  menuNav.classList.remove('navigation--open');
+  menuNav.classList.remove('navigation--no-js')
+}
+;
+if (inputNumberPhone) {
+  inputNumberPhone.addEventListener('onkeyup', (evt) => {
+    target.value = target.value.replace(/[^\d]/g, '');
+  });
+}
 // Кнопка гамбургер
 if (toggle) {
+  toggle.classList.remove('toggle--off');
   toggle.addEventListener('click', (evt) => {
     (toggle.classList.contains('is-active') === true) ? closeMenu() : openMenu();
   });
@@ -26,15 +37,18 @@ function closeMenu() {
   menu.classList.remove('menu--open');
 }
 // Smooth scroll
-const links = document.querySelectorAll('a[href^="#"]');
-for (let link of links) {
-  link.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    const id = link.getAttribute('href');
 
-    document.querySelector(id).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+if (links) {
+  for (let link of links) {
+    link.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      const id = link.getAttribute('href');
+
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     });
-  });
-};
+  };
+}
+
