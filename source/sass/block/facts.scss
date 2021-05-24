@@ -3,7 +3,8 @@
   padding-bottom: 150px;
 
   @include tablet {
-    padding-bottom: 70px;
+    margin-top: 50px;
+    padding-bottom: 25px;
   }
 }
 
@@ -22,6 +23,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include tablet {
+    margin-top: 30px;
+  }
 }
 
 .facts__item {
@@ -50,7 +55,8 @@
 
   @include tablet {
     width: 50%;
-    margin-top: 40px;
+    // margin-top: 40px;
+    margin-bottom: 45px;
 
     p {
       margin: 15px auto 0 auto;

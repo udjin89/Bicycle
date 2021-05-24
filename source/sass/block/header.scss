@@ -74,7 +74,7 @@
   text-align: left;
 
   @include tablet {
-    margin-top: 80px;
+    margin-top: 85px;
     font-size: 30px;
     line-height: 42px;
     text-align: center;
@@ -107,6 +107,7 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 20px;
+    // margin-bottom: 80px;
   }
 
   @include mobile {

@@ -39,6 +39,10 @@
 .contact__mail {
   margin-right: 90px;
 
+  @include tablet {
+    margin-left: -10px;
+  }
+
   @include mobile {
     margin-right: 0;
     margin-bottom: 22px;
@@ -47,4 +51,5 @@
 
 .contact__icon {
   margin-right: 15px;
+
 }
