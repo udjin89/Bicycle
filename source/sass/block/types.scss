@@ -1,5 +1,4 @@
 .types {
-  // background-color: $light-grey;
   background-color: $light-grey;
   padding-bottom: 144px;
   padding-top: 149px;
@@ -11,7 +10,7 @@
   }
 
   @include mobile {
-    padding-bottom: 3px;
+    padding-bottom: 3 px;
   }
 }
 
@@ -50,19 +49,15 @@
 
   @include tablet {
     margin-top: 30px;
-    // justify-content: center;
   }
 
   @include mobile {
     display: block;
-
   }
 }
 
 .types__item {
-  // flex-grow: 1;
   width: 341px;
-
 
   &:nth-child(2n) {
     margin-top: 30px;
@@ -76,14 +71,9 @@
     margin-bottom: 50px;
     max-width: 50%;
     width: 270px;
-    // margin: 0 auto;
-    // flex-grow: 1;
-    // width: 50%;
-    // display: flex;
 
     &:nth-child(2n) {
       margin-top: 0;
-      // justify-content: flex-end;
     }
 
     &:nth-child(3n) {
@@ -107,13 +97,8 @@
   width: fit-content;
 
   @include tablet {
-    // width: 270px;
     margin: 0 auto;
-    // margin: 0 0 0 auto;
-    // height: 300px;
   }
-
-  &:visited {}
 
   &:hover {
     opacity: 0.9;

@@ -19,7 +19,6 @@
   @include title;
   color: $white;
   text-align: center;
-
 }
 
 .about p {
@@ -88,7 +87,6 @@
   @include tablet {
     width: 90px;
     height: 90px;
-
   }
 
   @include mobile {

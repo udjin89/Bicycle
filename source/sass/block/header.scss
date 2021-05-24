@@ -1,10 +1,5 @@
 .header {
   min-height: 825px;
-
-  @include tablet {}
-
-  @include mobile {}
-
   background-color: $dark;
   background-image: url('../img/background/bike.jpg');
   background-repeat: no-repeat;
@@ -67,7 +62,6 @@
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
-  // letter-spacing: -0.005em;
   letter-spacing: 1px;
   color: $white;
   max-width: 393px;
@@ -107,7 +101,6 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 20px;
-    // margin-bottom: 80px;
   }
 
   @include mobile {
