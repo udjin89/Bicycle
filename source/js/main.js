@@ -14,8 +14,13 @@ if (menuNav) {
 }
 ;
 if (inputNumberPhone) {
-  inputNumberPhone.addEventListener('onkeyup', (evt) => {
-    target.value = target.value.replace(/[^\d]/g, '');
+  inputNumberPhone.addEventListener('keyup', (evt) => {
+    console.log(inputNumberPhone.value);
+    // evt.keyCode === 27
+    // if (evt.keyCode != 171 || evt.key !== '(' || evt.key !== ')') {
+    inputNumberPhone.value = inputNumberPhone.value.replace(/[^\d]/g, '');
+    // }
+
   });
 }
 // Кнопка гамбургер

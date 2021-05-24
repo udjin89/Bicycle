@@ -9,6 +9,10 @@
     padding-top: 50px;
     padding-bottom: 20px;
   }
+
+  @include mobile {
+    padding-bottom: 3px;
+  }
 }
 
 .types h2 {
@@ -92,7 +96,7 @@
     max-width: 100%;
 
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 43px;
     }
   }
 }

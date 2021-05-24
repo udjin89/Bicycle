@@ -7,7 +7,7 @@
   }
 
   @include mobile {
-    padding-top: 120px;
+    padding-top: 115px;
   }
 }
 
@@ -16,6 +16,10 @@
   margin: 0;
   padding: 0;
   text-align: center;
+
+  @include mobile {
+    font-size: 18px;
+  }
 }
 
 .footer p {
@@ -36,7 +40,7 @@
 
   @include mobile {
     padding: 0 16px;
-    margin: 20px auto 25px auto;
+    margin: 15px auto 20px auto;
   }
 }
 
@@ -52,5 +56,6 @@
 
   @include mobile {
     padding: 0 0;
+    height: 250px;
   }
 }
