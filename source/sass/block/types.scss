@@ -10,7 +10,7 @@
   }
 
   @include mobile {
-    padding-bottom: 3 px;
+    padding-bottom: 3px;
   }
 }
 
@@ -59,7 +59,7 @@
 .types__item {
   width: 341px;
 
-  &:nth-child(2n) {
+  &:nth-child(3n+2) {
     margin-top: 30px;
   }
 
