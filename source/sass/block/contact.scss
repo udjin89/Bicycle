@@ -1,17 +1,18 @@
 .contact {
   display: flex;
-  margin: 40px auto 100px auto;
+  margin: 40px auto 0 auto;
   padding-bottom: 100px;
   justify-content: center;
 
   @include tablet {
-    margin: 20px auto 100px auto;
+    margin: 20px auto 0 auto;
+    padding-bottom: 52px;
   }
 
   @include mobile {
     flex-direction: column;
     align-items: center;
-    margin: 30px auto 50px auto;
+    margin: 30px auto 0 auto;
     padding-bottom: 50px;
     padding-left: 20px;
   }
@@ -20,7 +21,7 @@
 .contact__mail,
 .contact__phone {
   display: flex;
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;

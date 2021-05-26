@@ -27,7 +27,7 @@
   margin: 0;
   padding: 0;
 
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -35,8 +35,12 @@
 
   text-align: center;
   letter-spacing: -0.005em;
+  padding-left: 20px;
+  padding-right: 20px;
 
-
+  @include tablet {
+    padding: 0;
+  }
 }
 
 .navigation--no-js,
@@ -77,7 +81,7 @@
   @include tablet {
     position: relative;
     padding: 16px 0 16px 16px;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     margin-bottom: 30px;
 
     &::after {
@@ -88,7 +92,7 @@
       top: 50%;
       transform: translateY(-50%);
       right: 50px;
-      background-image: url(../img/icon/arrow.svg);
+      background-image: url("../img/icon/arrow.svg");
       background-repeat: no-repeat;
       background-size: contain;
     }

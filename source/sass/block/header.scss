@@ -1,31 +1,31 @@
 .header {
   min-height: 825px;
   background-color: $dark;
-  background-image: url('../img/background/bike.jpg');
+  background-image: url("../img/background/bike.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @include retina {
-    background-image: url('../img/background/bike@2x.jpg');
+    background-image: url("../img/background/bike@2x.jpg");
   }
 
   @include tablet {
-    min-height: 0px;
+    min-height: 0;
     max-height: fit-content;
-    background-image: url('../img/background/bike-tablet.jpg');
+    background-image: url("../img/background/bike-tablet.jpg");
     background-size: 100%;
 
     @include retina {
-      background-image: url('../img/background/bike-tablet@2x.jpg');
+      background-image: url("../img/background/bike-tablet@2x.jpg");
     }
   }
 
   @include mobile {
-    background-image: url('../img/background/bike-mobile.jpg');
+    background-image: url("../img/background/bike-mobile.jpg");
     background-size: 100%;
 
     @include retina {
-      background-image: url('../img/background/bike-mobile@2x.jpg');
+      background-image: url("../img/background/bike-mobile@2x.jpg");
     }
   }
 }
@@ -37,8 +37,6 @@
   @include tablet {
     display: block;
   }
-
-  @include mobile {}
 }
 
 .header__description {
@@ -57,7 +55,7 @@
   margin: 0;
   padding: 0;
   margin-top: 45px;
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 46px;
@@ -85,7 +83,7 @@
   margin: 0;
   margin-top: 24px;
   padding: 0;
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;

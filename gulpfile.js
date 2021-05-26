@@ -14,6 +14,7 @@ const svgstore = require("gulp-svgstore");
 const htmlmin = require("gulp-htmlmin");
 const jsmin = require("gulp-uglify-es").default;
 const del = require("del");
+const jsconcat = require("gulp-concat");
 
 //Html - минифицируем
 const html = () => {
@@ -24,16 +25,24 @@ const html = () => {
 
 exports.html = html;
 
-// Scripts
+// Scripts .pipe(jsmin()) - для минификации
 const script = () => {
   return gulp.src("source/js/*.js")
-    .pipe(jsmin())
+    .pipe(jsconcat("main.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
 
 exports.jsmin = script;
+// Script lib concat
+const concatjs = () => {
+  return gulp.src("source/js/lib/*.js")
+    .pipe(jsconcat("vendor.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
 
+exports.jsconcat = concatjs;
 // Styles - обработка scss
 const styles = () => {
   return gulp.src("source/sass/style.scss")// берем стили
@@ -90,11 +99,10 @@ const sprite = () => {
 exports.sprite = sprite;
 // Copy files
 const copy = (done) => {
-  // берем файлы указаные в массиве
+  // берем файлы указаные в массиве // "source/img/**/*.{jpg,png,svg}" для копирования изображений
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
-    "source/img/**/*.{jpg,png,svg}"
+    "source/*.ico"
   ],
     {
       base: "source" // Указываем базовый уровень, откуда копировать. Иначе скопирует весь путь: "source/fonts/*.{woff2,woff}", а нам нужен только: /fonts/*.{woff2,woff} положить в  build
@@ -168,6 +176,7 @@ exports.default = gulp.series(
     copy,
     sprite,
     script,
+    concatjs,
     images,
     createWebp
   ),

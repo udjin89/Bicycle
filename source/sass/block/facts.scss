@@ -36,11 +36,11 @@
 .facts__item {
   counter-increment: counter;
 
-  &:before {
+  &::before {
 
-    content: '0'counter(counter);
+    content: "0"counter(counter);
     display: block;
-    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;
@@ -50,7 +50,7 @@
   }
 
   p {
-    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 34px;
@@ -63,7 +63,6 @@
 
   @include tablet {
     width: 50%;
-    // margin-top: 40px;
     margin-bottom: 45px;
 
     p {

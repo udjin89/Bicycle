@@ -26,9 +26,7 @@ img {
   max-width: 1130px;
   margin: 0 auto;
 
-
   @include tablet {
-    // max-width: 726px;
     padding: 0 89px;
   }
 
@@ -50,7 +48,7 @@ img {
 .container-special-grid {
   width: 327px;
   margin-left: auto;
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .page,

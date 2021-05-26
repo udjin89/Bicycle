@@ -25,6 +25,7 @@
   right: 15px;
   height: 1px;
   background-color: $black;
+  transition: background 0s 0.3s;
 }
 
 .toggle span::before,
@@ -36,10 +37,13 @@
   height: 1px;
   background-color: $black;
   content: "";
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
 }
 
 .toggle span::before {
   top: -8px;
+  transition-property: top, transform;
 }
 
 .toggle span::after {
@@ -47,20 +51,6 @@
 }
 
 // ++++++++++++++++++++++++++++++++++++++++++=
-.toggle span {
-  transition: background 0s 0.3s;
-}
-
-.toggle span::before,
-.toggle span::after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
-}
-
-.toggle span::before {
-  transition-property: top, transform;
-}
-
 .span::after {
   transition-property: bottom, transform;
 }
@@ -68,7 +58,6 @@
 /* состояние active при открытом меню  */
 .toggle.is-active {
   background-color: $white;
-
 }
 
 .toggle.is-active span {
