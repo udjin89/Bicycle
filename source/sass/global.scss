@@ -33,6 +33,10 @@ img {
   @include mobile {
     padding: 0 15px;
   }
+
+  &--facts {
+    max-width: 1150px;
+  }
 }
 
 .container-slim {
