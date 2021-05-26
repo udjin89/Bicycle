@@ -1,6 +1,7 @@
 .footer {
   position: relative;
   padding-top: 250px;
+  align-self: end;
 
   @include tablet {
     padding-top: 150px;

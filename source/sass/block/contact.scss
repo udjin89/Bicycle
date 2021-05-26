@@ -1,11 +1,16 @@
 .contact {
   display: flex;
+  flex-wrap: wrap;
+  column-gap: 90px;
+  row-gap: 40px;
   margin: 40px auto 0 auto;
+  padding-top: 40px;
   padding-bottom: 100px;
   justify-content: center;
 
   @include tablet {
     margin: 20px auto 0 auto;
+    padding-top: 20px;
     padding-bottom: 52px;
   }
 
@@ -15,6 +20,7 @@
     margin: 30px auto 0 auto;
     padding-bottom: 50px;
     padding-left: 20px;
+    row-gap: 0;
   }
 }
 
@@ -39,7 +45,7 @@
 }
 
 .contact__mail {
-  margin-right: 90px;
+  // margin-right: 90px;
   margin-left: -15px;
 
   @include tablet {
@@ -47,6 +53,7 @@
   }
 
   @include mobile {
+    margin-top: 12px;
     margin-right: 0;
     margin-bottom: 22px;
   }

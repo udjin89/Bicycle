@@ -25,11 +25,14 @@
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: space-around;
+  row-gap: 40px;
   flex-wrap: wrap;
 
   @include tablet {
     margin-top: 30px;
+    row-gap: 0;
   }
 }
 

@@ -6,11 +6,11 @@
 
   @include tablet {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
   }
 
   @include mobile {
-    padding-bottom: 3px;
+    padding-bottom: 52px;
   }
 }
 
@@ -46,9 +46,12 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  row-gap: 40px;
 
   @include tablet {
+    row-gap: 50px;
+    column-gap: 40px;
     margin-top: 30px;
   }
 
@@ -69,16 +72,17 @@
   }
 
   @include tablet {
-    margin-bottom: 50px;
-    max-width: 50%;
-    width: 270px;
+    // margin-bottom: 50px;
+    // max-width: 50%;
+    width: 45%;
+    min-width: 270px;
 
     &:nth-child(2n) {
       margin-top: 0;
     }
 
     &:nth-child(3n) {
-      margin: 0 auto 50px auto;
+      margin: 0 auto 0 auto;
     }
   }
 
@@ -146,7 +150,7 @@
   }
 }
 
-.types__link--circle-big {
+.types__item:nth-child(3n+1) .types__link {
   &::before {
     z-index: -1;
     top: 157px;
@@ -170,7 +174,7 @@
   }
 }
 
-.types__link--squares {
+.types__item:nth-child(3n+2) .types__link {
   &::before {
     z-index: 1;
     top: -18px;
@@ -190,6 +194,7 @@
   }
 
   @include tablet {
+
     &::before,
     &::after {
       display: none;
@@ -197,7 +202,7 @@
   }
 }
 
-.types__link--circle-small {
+.types__item:nth-child(3n) .types__link {
   &::before {
     z-index: -1;
     top: -32px;
@@ -221,3 +226,80 @@
     }
   }
 }
+
+// .types__link--circle-big {
+//   &::before {
+//     z-index: -1;
+//     top: 157px;
+//     left: -60px;
+//     width: 180px;
+//     height: 180px;
+//     border: 27px solid $green;
+//     border-radius: 50%;
+
+//     @include tablet {
+//       top: 201px;
+//       left: -37px;
+//       width: 127px;
+//       height: 127px;
+//       border: 18px solid $green;
+//     }
+
+//     @include mobile {
+//       left: -24px;
+//     }
+//   }
+// }
+
+// .types__link--squares {
+//   &::before {
+//     z-index: 1;
+//     top: -18px;
+//     left: -19px;
+//     width: 47px;
+//     height: 47px;
+//     border: 8px solid $green;
+//   }
+
+//   &::after {
+//     z-index: 1;
+//     bottom: 35px;
+//     right: -23px;
+//     width: 47px;
+//     height: 47px;
+//     border: 8px solid $green;
+//   }
+
+//   @include tablet {
+
+//     &::before,
+//     &::after {
+//       display: none;
+//     }
+//   }
+// }
+
+// .types__link--circle-small {
+//   &::before {
+//     z-index: -1;
+//     top: -32px;
+//     right: -36px;
+//     width: 95px;
+//     height: 95px;
+//     border: 17px solid $green;
+//     border-radius: 50%;
+
+//     @include tablet {
+//       z-index: 1;
+//       top: -20px;
+//       right: -25px;
+//       width: 68px;
+//       height: 68px;
+//       border: 13px solid $green;
+//     }
+
+//     @include mobile {
+//       right: -15px;
+//     }
+//   }
+// }
