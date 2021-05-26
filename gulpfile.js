@@ -16,10 +16,9 @@ const jsmin = require("gulp-uglify-es").default;
 const del = require("del");
 const jsconcat = require("gulp-concat");
 
-//Html - минифицируем
+//Html - минифицируем .pipe(htmlmin({ collapseWhitespace: true }))
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"))
 }
 

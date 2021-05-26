@@ -1,3 +1,17 @@
+const toggle = document.querySelector('.toggle');
+const menu = document.querySelector('.menu');
+const menuNav = document.querySelector('.navigation');
+// // No-js menu
+if (menu) {
+  menu.classList.remove('menu--open');
+}
+if (menuNav) {
+  menuNav.classList.remove('navigation--open');
+  menuNav.classList.remove('navigation--no-js');
+}
+if (toggle) {
+  toggle.classList.remove('toggle--off');
+}
 // Кнопка гамбургер
 if (toggle) {
   toggle.addEventListener('click', (evt) => {

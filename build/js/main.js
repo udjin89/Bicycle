@@ -5,11 +5,22 @@ if (inputNumberPhone) {
   });
 }
 
+
+
 const toggle = document.querySelector('.toggle');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.navigation');
-const links = document.querySelectorAll('a[href^="#"]');
-
+// // No-js menu
+if (menu) {
+  menu.classList.remove('menu--open');
+}
+if (menuNav) {
+  menuNav.classList.remove('navigation--open');
+  menuNav.classList.remove('navigation--no-js');
+}
+if (toggle) {
+  toggle.classList.remove('toggle--off');
+}
 // Кнопка гамбургер
 if (toggle) {
   toggle.addEventListener('click', (evt) => {
@@ -28,20 +39,8 @@ function closeMenu() {
   menu.classList.remove('menu--open');
 }
 
-// // No-js menu
-if (menu) {
-  menu.classList.remove('menu--open');
-}
-if (menuNav) {
-  menuNav.classList.remove('navigation--open');
-  menuNav.classList.remove('navigation--no-js');
-}
-if (toggle) {
-  toggle.classList.remove('toggle--off');
-}
-
 // Smooth scroll
-
+const links = document.querySelectorAll('a[href^="#"]');
 if (links) {
   for (let link of links) {
     link.addEventListener('click', function (evt) {
