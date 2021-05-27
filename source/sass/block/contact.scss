@@ -1,12 +1,16 @@
 .contact {
   display: flex;
   flex-wrap: wrap;
+  // width: 50%;
+  // background-color: red;
   column-gap: 90px;
   row-gap: 40px;
   margin: 40px auto 0 auto;
   padding-top: 40px;
+  // padding-bottom: 60px;
   padding-bottom: 100px;
   justify-content: center;
+  // justify-content: space-around;
 
   @include tablet {
     margin: 20px auto 0 auto;
@@ -21,6 +25,8 @@
     padding-bottom: 50px;
     padding-left: 20px;
     row-gap: 0;
+    // display: block;
+    // width: 100%;
   }
 }
 
@@ -33,6 +39,8 @@
   line-height: 22px;
   color: $grey;
   text-decoration: none;
+  // margin-bottom: 40px;
+  // width: 40%;
 
   &:hover {
     color: $dark-grey;
@@ -42,25 +50,40 @@
   &:active {
     color: $green;
   }
+
+  // @include mobile {
+  //   width: 100%;
+  //   margin-left: auto;
+  //   justify-content: center;
+  // }
 }
 
 .contact__mail {
-  // margin-right: 90px;
+  // margin-right: 5px;
   margin-left: -15px;
+  // margin-left: 145px;
 
   @include tablet {
     margin-left: -10px;
+    // margin-left: 100px;
+    // margin-right: 50px;
   }
 
   @include mobile {
     margin-top: 12px;
+    // margin-left: 10px;
     margin-right: 0;
     margin-bottom: 22px;
+    // margin: 12px auto;
+    // margin-left: -10px;
+    // flex-shrink: 1;
   }
 }
 
 .contact__phone {
   @include mobile {
+    // margin-top: 17px;
+    // margin-left: -35px;
     margin-top: -5px;
     margin-left: -30px;
     align-items: center;

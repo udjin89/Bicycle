@@ -23,13 +23,14 @@
   border: 1px solid #c9ccd4;
   border-radius: 6px;
   cursor: pointer;
+  line-height: 48px;
+  display: block;
 
   &::placeholder {
     font-family: "OpenSans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 48px;
     color: $special-grey;
   }
 
