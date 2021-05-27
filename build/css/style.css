@@ -263,6 +263,9 @@
 
 .navigation__item:not(:nth-child(4n)) {
   margin-right: 134px; }
+  @media screen and (max-width: 1023.33px) {
+    .navigation__item:not(:nth-child(4n)) {
+      margin-right: 0; } }
 
 @media screen and (max-width: 1023.33px) {
   .navigation--no-js,

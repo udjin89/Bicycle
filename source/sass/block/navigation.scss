@@ -56,6 +56,10 @@
 
 .navigation__item:not(:nth-child(4n)) {
   margin-right: 134px;
+
+  @include tablet {
+    margin-right: 0;
+  }
 }
 
 .navigation--no-js,
