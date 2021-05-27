@@ -33,4 +33,3 @@ function closeMenu() {
   menu.classList.remove('menu--open');
   body.classList.remove('overflow');
 }
-

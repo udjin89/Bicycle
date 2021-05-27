@@ -53,6 +53,7 @@
     row-gap: 50px;
     column-gap: 40px;
     margin-top: 30px;
+    justify-content: center;
   }
 
   @include mobile {
@@ -61,7 +62,8 @@
 }
 
 .types__item {
-  width: 341px;
+  max-width: 341px;
+  width: 30%;
 
   &:nth-child(3n+2) {
     margin-top: 30px;
@@ -74,7 +76,7 @@
   @include tablet {
     // margin-bottom: 50px;
     // max-width: 50%;
-    width: 45%;
+    // width: 45%;
     min-width: 270px;
 
     &:nth-child(2n) {
@@ -194,7 +196,6 @@
   }
 
   @include tablet {
-
     &::before,
     &::after {
       display: none;

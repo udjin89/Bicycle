@@ -42,7 +42,6 @@ function closeMenu() {
   body.classList.remove('overflow');
 }
 
-
 // Smooth scroll
 const links = document.querySelectorAll('a[href^="#"]');
 if (links) {
