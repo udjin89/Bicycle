@@ -128,6 +128,8 @@ const server = (done) => {
     cors: true,
     notify: false,
     ui: false,
+    tunnel: true,
+
   });
   done();
 }

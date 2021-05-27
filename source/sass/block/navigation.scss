@@ -31,7 +31,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 134px;
+  // column-gap: 134px;
   //--
   // justify-content: space-between;
   list-style: none;
@@ -52,6 +52,10 @@
   @include tablet {
     padding: 0;
   }
+}
+
+.navigation__item:not(:nth-child(4n)) {
+  margin-right: 134px;
 }
 
 .navigation--no-js,

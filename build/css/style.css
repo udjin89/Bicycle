@@ -245,8 +245,6 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 134px;
-       column-gap: 134px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -262,6 +260,9 @@
   @media screen and (max-width: 1023.33px) {
     .navigation__list {
       padding: 0; } }
+
+.navigation__item:not(:nth-child(4n)) {
+  margin-right: 134px; }
 
 @media screen and (max-width: 1023.33px) {
   .navigation--no-js,
